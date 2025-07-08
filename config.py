@@ -3,3 +3,4 @@ WIN_HEIGHT = 480
 TILESIZE = 32
 FPS = 60
 player_layer = 1
+player_speed = 3
