@@ -11,6 +11,15 @@ class Game:
         self.clock = pygame.time.Clock()
         # self.font = pygame.font.Font("Arial", 32)
         self.running = True
+
+    def createTilemap(self):
+        #enumerate helps iterate through the 2d array
+        for w, row in enumerate(tilemap):
+            for i, column in enumerate(row):
+                if column == "B":
+                    Block(self, i, w)
+                if column == "P":
+                    Player(self, i, w) 
     
     def new(self):
         #starting a new game
@@ -21,7 +30,7 @@ class Game:
         self.blocks = pygame.sprite.LayeredUpdates()
         self.enemies = pygame.sprite.LayeredUpdates()
         self.attacks = pygame.sprite.LayeredUpdates()
-        self.player = Player(self, 1, 2)
+        self.createTilemap()
 
     def events(self):
         #gameplay events
