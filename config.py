@@ -6,24 +6,25 @@ player_speed = 3
 
 #higher number = foreground
 #lower number = background
-player_layer = 2
-block_layer = 1
+player_layer = 3
+block_layer = 2
+ground_layer = 1
 
 #480/32=15
 tilemap = [
-    'BBBBBBBBBBBBBBBBBBBB',
+    'BTTTTTTTTTTTTTTTTTTB',
     'B..................B',
-    'B.........BBBBBB...B',
-    'B..BB..............B',
-    'B..BB..............B',
-    'B..BB..........P...B',
-    'B..................B',
-    'B..................B',
-    'B......B...........B',
-    'B......BBBBB.......B',
-    'B......B...........B',
-    'B......B...........B',
-    'B..................B',
+    'B.......G...OOOO...B',
+    'B..OO..............B',
+    'B..OO..............B',
+    'B..OO..........P...B',
+    'B......G...........B',
+    'B..............G...B',
+    'B......O...........B',
+    'B...G..OOOOO.......B',
+    'B..G...O...........B',
+    'B......O........G..B',
+    'B............G.....B',
     'B..................B',
     'BBBBBBBBBBBBBBBBBBBB',
 ]

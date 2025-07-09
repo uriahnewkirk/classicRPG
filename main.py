@@ -9,17 +9,27 @@ class Game:
         pygame.init()
         self.screen = pygame.display.set_mode((WIN_WIDTH, WIN_HEIGHT))
         self.clock = pygame.time.Clock()
-        # self.font = pygame.font.Font("Arial", 32)
         self.running = True
+
+        #declare our spritesheet variables
+        self.character_spritesheet = Spritesheet('assets/Characters/BirdBlue/BIRDSPRITESHEET_Blue.png')
+        self.tileset32Rogues_spritesheet = Spritesheet('assets/Terrain/32rogues_tiles.png')
 
     def createTilemap(self):
         #enumerate helps iterate through the 2d array
         for w, row in enumerate(tilemap):
             for i, column in enumerate(row):
+                Ground(self, i, w)
                 if column == "B":
                     Block(self, i, w)
                 if column == "P":
-                    Player(self, i, w) 
+                    Player(self, i, w)
+                if column == "G":
+                    Grass(self, i, w)
+                if column == "T":
+                    TopWall(self, i, w)
+                if column == "O":
+                    Obstacle(self, i, w)
     
     def new(self):
         #starting a new game
