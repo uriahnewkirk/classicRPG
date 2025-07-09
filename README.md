@@ -10,7 +10,6 @@ character sprites and tilesets used can be found at the links below:
 <br>
 TODO:
 
-- add sprite animations
 - add ingame menu
 - add enemies
 - add combat
