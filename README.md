@@ -3,8 +3,15 @@ basic RPG game created using pygame incorporating custom character sprites and t
 
 
 character sprites and tilesets used can be found at the links below:
-https://pixelfight.itch.io/birdcat
-https://sethbb.itch.io/32rogues
+- https://pixelfight.itch.io/birdcat
+- https://sethbb.itch.io/32rogues
 
+<br>
+<br>
+TODO:
 
-TODO: add sample/teaser image to the README
+- add sprite animations
+- add ingame menu
+- add enemies
+- add combat
+- add sample/teaser image to the README
