@@ -14,6 +14,7 @@ class Game:
         #declare our spritesheet variables
         self.character_spritesheet = Spritesheet('assets/Characters/BirdBlue/BIRDSPRITESHEET_Blue.png')
         self.tileset32Rogues_spritesheet = Spritesheet('assets/Terrain/32rogues_tiles.png')
+        self.enemy_spritesheet = Spritesheet("assets/Characters/CatGrey/CATSPRITESHEET_Gray.png")
 
     def createTilemap(self):
         #enumerate helps iterate through the 2d array
@@ -29,7 +30,11 @@ class Game:
                 if column == "T":
                     TopWall(self, i, w)
                 if column == "O":
-                    Obstacle(self, i, w)
+                    Obstacle01(self, i, w)
+                if column == "D":
+                    Obstacle02(self, i, w)
+                if column == "E":
+                    Enemy(self, i, w)
     
     def new(self):
         #starting a new game
