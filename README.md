@@ -4,6 +4,7 @@ basic RPG game created using pygame incorporating custom character sprites and t
 character sprites and tilesets used can be found at the links below:
 - https://pixelfight.itch.io/birdcat
 - https://sethbb.itch.io/32rogues
+- https://pixel-boy.itch.io/ninja-adventure-asset-pack
 
 
 Intro Screen:  
@@ -16,8 +17,3 @@ Game Over Screen:
 <img src="https://i.imgur.com/UoNd8v0.png" title="try your luck again if you happen to perish" width=50%/>
 
 <br>
-<br>
-TODO:
-
-- add combat
-- add sample/teaser image to the README
